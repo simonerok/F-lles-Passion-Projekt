@@ -14,19 +14,18 @@
   <body>
     <button></button>
 
-    <article class="person_id">
-      <img src="" alt="" class="billede_singleview" />
+    <article class="artikel_id">
       <h2></h2>
       <p></p>
       <p></p>
     </article>
 
     <script>
-      /* vi laver en søger via urlSearchParams og urlparamams som finder vores id*/
       const urlParams = new URLSearchParams(window.location.search);
       const id = urlParams.get("id");
       console.log(id);
 
+      /* Ændre til rigtige key og url når retsdb er done*/
       const endpoint = "https://persongalleri-5d3e.restdb.io/rest/persongalleri/" + id;
       const mereinfo = {
         headers: {
@@ -34,22 +33,24 @@
         },
       };
 
-      let enPerson;
+      let enArtikel;
 
       console.log("ID", id);
       document.addEventListener("DOMContentLoaded", hentData);
 
       async function hentData() {
         const respons = await fetch(endpoint, mereinfo);
-        enPerson = await respons.json();
-        console.log(enPerson);
-        visPerson();
+        enArtikel = await respons.json();
+        console.log(enArtikel);
+        visArtikel();
       }
 
-      function visPerson() {
-        document.querySelector("h2").textContent = enPerson.fornavn + " " + enPerson.efternavn;
-        document.querySelector("img").src = "../billeder/" + enPerson.billede;
-        document.querySelector("img").alt = enPerson.billede;
+      /* Ændre navne til de rigtige når restdb er opdateret */
+      function visArtikel() {
+        document.querySelector("h2").textContent = enArtikel.fornavn + " " + enArtikel.efternavn;
+        document.querySelector("img").src = "../billeder/" + enArtikel.billede;
+        document.querySelector("img").alt = enArtikel.billede;
+        /* style og ændre knap */
         document.querySelector("button").addEventListener("click", tilbageKnap);
       }
 
