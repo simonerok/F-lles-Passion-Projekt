@@ -23,14 +23,14 @@ hentData();
 
 function visTeori(teorier) {
     
-const main = document.querySelector("main");
+const section = document.querySelector("section");
 const template = document.querySelector("template").content;
 
 teorier.forEach(teori => {
  
     const klon = template.cloneNode(true);
     klon.querySelector(".billeder").src = "images/" + teori.Billednavn;
-    main.appendChild(klon);
+    section.appendChild(klon);
 });
 
 }

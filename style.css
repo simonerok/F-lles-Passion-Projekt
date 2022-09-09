@@ -21,4 +21,41 @@ p {
   font-style: normal;
 }
 
+img {
+  max-width: 50%;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 5px;
+  align-items: center;
+}
+
+.ikon {
+  width: 4rem;
+}
+
+article {
+background-image: url( "images/Pergament.svg");
+height: 100vh;
+width: 100%;
+background-position: 100%;
+margin: 1rem;
+
+}
+
+
+
+
+@media (min-width: 1200px){
+
+section {
+grid-template-columns: repeat(3, 1fr);
+}
+
+}
+
+
+
 /* STYLING AF ARRAY */
