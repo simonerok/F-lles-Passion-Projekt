@@ -31,6 +31,7 @@ section.innerHTML = ""; //visker tavlen ren først
 teorier.forEach(teori => {
     const klon = template.cloneNode(true);
     if(filter == "alle" || filter == teori.kategori){
+        klon.querySelector("article").addEventListener("click", ()=> {visEnkelt(teori._id)})
         klon.querySelector(".billeder").src = "images/" + teori.Billednavn;
         klon.querySelector("h2").textContent = teori.Overskrift;
         klon.querySelector("p").textContent = teori.Korttekst;
@@ -51,4 +52,8 @@ function vaelger(){
     visTeori(teorier);
     document.querySelector(".valgt").classList.remove("valgt");
     this.classList.add("valgt");
+}
+
+function visEnkelt(id){
+    location.href ="singleview.html?id="+id;
 }

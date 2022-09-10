@@ -10,6 +10,7 @@ h1 {
 
   font-style: normal;
 }
+
 h2 {
   font-family: roma-inline, sans-serif;
 
@@ -23,6 +24,7 @@ h2 {
 
   padding: 5px;
 }
+
 p {
   font-family: john-doe, sans-serif;
 
@@ -95,9 +97,10 @@ header {
 }
 
 footer {
-  text-align: end;
+  display: flex;
   background-color: darkred;
   color: white;
+  justify-content: end;
 }
 
 @media (min-width: 1200px){
