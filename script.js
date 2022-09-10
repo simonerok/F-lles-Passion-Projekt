@@ -30,6 +30,8 @@ teorier.forEach(teori => {
  
     const klon = template.cloneNode(true);
     klon.querySelector(".billeder").src = "images/" + teori.Billednavn;
+    klon.querySelector("h2").textContent = teori.Overskrift;
+    klon.querySelector("p").textContent = teori.Korttekst;
     section.appendChild(klon);
 });
 
