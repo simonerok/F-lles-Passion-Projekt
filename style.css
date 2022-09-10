@@ -20,6 +20,8 @@ h2 {
   text-decoration: underline;
   
   color: orange;
+
+  padding: 5px;
 }
 p {
   font-family: john-doe, sans-serif;
@@ -49,6 +51,10 @@ main {
   background-color: darkmagenta;
 }
 
+.valgt {
+  background-color: #cfcfcf;
+}
+
 article {
 background-image: url( "images/Pergament.svg");
 height: 100vh;
@@ -59,6 +65,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+}
+
+p {
+  padding: 10px;
+  margin: 50px;
 }
 
 .knapper {
