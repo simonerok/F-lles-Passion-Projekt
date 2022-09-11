@@ -22,15 +22,15 @@ header {
   box-shadow: none;
 }
 
-.icons {
-  width: 7%;
-}
+/* STYLING AF TEKST TIL IKON */
 
 .tekst_til_ikon {
   position: absolute;
   left: 24%;
   font-size: 1.3rem;
 }
+
+/* STYLING AF SØG */
 
 /* FONTE */
 h1 {
