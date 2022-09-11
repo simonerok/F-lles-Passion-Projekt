@@ -24,10 +24,6 @@ header {
 
 .icons {
   width: 7%;
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
 }
 
 .tekst_til_ikon {
