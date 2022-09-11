@@ -1,3 +1,8 @@
+main {
+  margin: 0 auto;
+  max-width: 1275px;
+}
+
 /* FONTE */
 h1 {
   font-family: roma-inscribed, sans-serif;
@@ -21,6 +26,7 @@ p {
   font-style: normal;
 }
 
+/* STYLING AF ARRAY */
 img {
   max-width: 50%;
 }
@@ -37,25 +43,15 @@ section {
 }
 
 article {
-background-image: url( "images/Pergament.svg");
-height: 100vh;
-width: 100%;
-background-position: 100%;
-margin: 1rem;
-
+  background-image: url("images/Pergament.svg");
+  height: 100vh;
+  width: 100%;
+  background-position: 100%;
+  margin: 1rem;
 }
 
-
-
-
-@media (min-width: 1200px){
-
-section {
-grid-template-columns: repeat(3, 1fr);
+@media (min-width: 1200px) {
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
-}
-
-
-
-/* STYLING AF ARRAY */
