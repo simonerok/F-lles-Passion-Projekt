@@ -1,6 +1,39 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 main {
   margin: 0 auto;
   max-width: 1275px;
+}
+
+header {
+  background-color: antiquewhite;
+  padding: 20px;
+  display: flex;
+}
+
+#ikon {
+  width: 6rem;
+  align-items: left;
+  padding: 0%;
+  top: auto;
+  box-shadow: none;
+}
+
+.icons {
+  width: 7%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.tekst_til_ikon {
+  position: absolute;
+  left: 24%;
+  font-size: 1.3rem;
 }
 
 /* FONTE */
@@ -29,6 +62,12 @@ p {
 /* STYLING AF ARRAY */
 img {
   max-width: 50%;
+  display: block;
+  position: relative;
+  top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  /*  box-shadow: 0 0 15px 15px; */
 }
 
 section {
@@ -38,20 +77,27 @@ section {
   align-items: center;
 }
 
-.ikon {
-  width: 4rem;
-}
-
 article {
   background-image: url("images/Pergament.svg");
   height: 100vh;
   width: 100%;
   background-position: 100%;
-  margin: 1rem;
 }
 
 @media (min-width: 1200px) {
   section {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.Overskrift_forside {
+  text-align: center;
+  font-size: 2rem;
+}
+
+footer {
+  background-color: antiquewhite;
+  padding: 20px;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
 }
