@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+>>>>>>> 52b1b116f7761a9ccc8312bdd0ce793bf0dd50c7
 main {
   margin: 0 auto;
   max-width: 1275px;
