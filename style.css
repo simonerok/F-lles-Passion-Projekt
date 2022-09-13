@@ -155,6 +155,13 @@ footer {
   justify-content: end;
 }
 
+.kategorier {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: darkred;
+}
+
 @media (min-width: 1200px) {
   section {
     grid-template-columns: repeat(3, 1fr);
