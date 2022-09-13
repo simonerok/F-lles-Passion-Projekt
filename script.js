@@ -5,6 +5,7 @@
 let filter = "alle";
 let teorier;
 
+//url'en til vores rest db og vores api key til at få adgang til indholdet
 const endpoint = "https://conspirapedia-e82d.restdb.io/rest/conspirapedia";
 const apikeys = {
     headers : {
@@ -12,7 +13,7 @@ const apikeys = {
     }   
 }
 
-
+//en asynkron funktion der henter json ned fra rest db og laver den om til noget man kan bruge i vscode
 async function hentData() {
     const response = await fetch(endpoint, apikeys);
     teorier = await response.json();
@@ -21,16 +22,17 @@ async function hentData() {
 
 hentData();
 
-
+// viser alle vores konspirationsteorier i html'en
 function visTeori(teorier) {
 const section = document.querySelector("section");
 const template = document.querySelector("template").content;
 
-section.innerHTML = ""; //visker tavlen ren først
+section.innerHTML = ""; //visker tavlen ren først inden der sættes mere ind i html
 
-teorier.forEach(teori => {
+// et for each loop der kører igennem alt json og kloner det ind i html elementerne. 
+teorier.forEach(teori => { 
     const klon = template.cloneNode(true);
-    if(filter == "alle" || filter == teori.kategori){
+    if(filter == "alle" || filter == teori.kategori){ //filtrerer hvad der skal vises alt efter hvad for en knap man har klikket på
         klon.querySelector("article").addEventListener("click", ()=> {visEnkelt(teori._id)})
         klon.querySelector(".billeder").src = "images/" + teori.Billednavn;
         klon.querySelector("h2").textContent = teori.Overskrift;
@@ -42,11 +44,12 @@ teorier.forEach(teori => {
 }
 
 const knapperne = document.querySelectorAll("button");
-
+//et for each loop der gør at man kan klikke på alle knapperne
 knapperne.forEach(knap => {
 knap.addEventListener("click", vaelger);
 });
 
+//en funktion der sætter filter variablen til det dataset i knappen man har klikket på og putter en klasse valgt der highlighter knappen
 function vaelger(){
     filter = this.dataset.kategori;
     visTeori(teorier);
@@ -54,6 +57,7 @@ function vaelger(){
     this.classList.add("valgt");
 }
 
+//en funktion der ændrer hvor man havner henne på sitet vha. id'et fra json-elementerne
 function visEnkelt(id){
     location.href ="singleview.html?id="+id;
 }
