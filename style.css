@@ -83,6 +83,10 @@ section {
   width: 7rem;
 }
 
+.Overskrift_forside {
+  text-align: center;
+}
+
 main {
   background-color: darkmagenta;
 }
