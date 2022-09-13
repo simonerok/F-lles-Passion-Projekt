@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Singleview dokument</title>
+    <link rel="stylesheet" href="https://use.typekit.net/mnk3oqv.css" />
     <link
     rel="icon"
     type="image/x-icon"
@@ -44,6 +45,7 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
+  grid-column: 2;
 }
 
   h2 {
@@ -101,9 +103,14 @@ h2 {
 
 .grid-container {
 display: grid;
+grid-template-columns: repeat(3, 1fr);
 justify-content: center;
 }
 
+
+button:hover {
+  border: solid yellow 2px;
+}
 
 
     </style>
