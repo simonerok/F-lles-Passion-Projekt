@@ -33,7 +33,8 @@ section.innerHTML = ""; //visker tavlen ren først inden der sættes mere ind i 
 teorier.forEach(teori => { 
     const klon = template.cloneNode(true);
     if(filter == "alle" || filter == teori.kategori){ //filtrerer hvad der skal vises alt efter hvad for en knap man har klikket på
-        klon.querySelector("article").addEventListener("click", ()=> {visEnkelt(teori._id)})
+        klon.querySelector("h2").addEventListener("click", ()=> {visEnkelt(teori._id)})
+        klon.querySelector(".billeder").addEventListener("click", ()=> {visEnkelt(teori._id)})
         klon.querySelector(".billeder").src = "images/" + teori.Billednavn;
         klon.querySelector("h2").textContent = teori.Overskrift;
         klon.querySelector("p").textContent = teori.Korttekst;
