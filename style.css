@@ -104,7 +104,7 @@ body {
 }
 
 .valgt {
-  background-color: #cfcfcf;
+  background-color: yellow;
 }
 
 article {
@@ -133,7 +133,8 @@ p {
 }
 
 button {
-  border: solid black 2px;
+  border: black 2px dotted;
+  border-radius: 30px;
   background-color: #8cc63f;
   padding: 10px;
   padding-left: 30px;
@@ -141,7 +142,7 @@ button {
 }
 
 button:hover {
-  border: solid yellow 2px;
+  border: dotted orange 2px;
 }
 
 header {
