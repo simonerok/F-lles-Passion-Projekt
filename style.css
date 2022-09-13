@@ -65,13 +65,10 @@ p {
 /* STYLING AF ARRAY */
 img {
   max-width: 50%;
-<<<<<<< HEAD
   max-height: 50%;
-=======
   display: block;
   margin-left: auto;
   margin-right: auto;
->>>>>>> master
 }
 
 section {
@@ -85,15 +82,11 @@ section {
   width: 7rem;
 }
 
-<<<<<<< HEAD
-main {
-=======
 .Overskrift_forside {
   text-align: center;
 }
 
 body {
->>>>>>> master
   background-color: darkmagenta;
 }
 
@@ -134,10 +127,6 @@ button {
 
 button:hover {
   border: solid yellow 2px;
-}
-
-header {
-  display: flex;
 }
 
 footer {
