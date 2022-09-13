@@ -5,7 +5,6 @@
 
 main {
   margin: 0 auto;
-  max-width: 1275px;
 }
 
 header {
@@ -16,8 +15,7 @@ header {
 
 #ikon {
   width: 16rem;
-  position: relative;
-  left: -3rem;
+
   padding: 0%;
   top: auto;
 }
@@ -130,6 +128,7 @@ p {
   justify-content: center;
   gap: 10px;
   background-color: darkred;
+  padding: 10px;
 }
 
 button {
