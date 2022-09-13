@@ -1,6 +1,35 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
+
+main {
+  margin: 0 auto;
+  max-width: 1275px;
+}
+
+header {
+  background-color: antiquewhite;
+  padding: 20px;
+  display: flex;
+}
+
+#ikon {
+  width: 6rem;
+  align-items: left;
+  padding: 0%;
+  top: auto;
+}
+
+/* STYLING AF TEKST TIL IKON */
+
+/* .tekst_til_ikon {
+  position: absolute;
+  left: 24%;
+  font-size: 1.3rem;
+} */
+
+/* STYLING AF SØG */
 
 /* FONTE */
 h1 {
@@ -33,9 +62,16 @@ p {
   font-style: normal;
 }
 
+/* STYLING AF ARRAY */
 img {
   max-width: 50%;
+<<<<<<< HEAD
   max-height: 50%;
+=======
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+>>>>>>> master
 }
 
 section {
@@ -49,7 +85,15 @@ section {
   width: 7rem;
 }
 
+<<<<<<< HEAD
 main {
+=======
+.Overskrift_forside {
+  text-align: center;
+}
+
+body {
+>>>>>>> master
   background-color: darkmagenta;
 }
 
@@ -108,9 +152,4 @@ footer {
 section {
 grid-template-columns: repeat(3, 1fr);
 }
-
 }
-
-
-
-/* STYLING AF ARRAY */

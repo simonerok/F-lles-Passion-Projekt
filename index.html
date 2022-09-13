@@ -4,17 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" url="/favicon.svg" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://iconifier.net/iconified/20220909223505_Artboard%201/favicon.ico"
-    />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mnk3oqv.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Forside</title>
   </head>
   <body>
-    <header><img class="ikon" src="Conspirapedia Logo.svg" alt="" /></header>
+    <header>
+      <div>
+        <img id="ikon" src="/images/logo.png" alt="" />
+      </div>
+
+      <div class="navbar">
+        <div class="icons">
+          <a href="#"> <img src="icons/search_ny.svg" alt="søg" width="32" height="32" class="search_bar" /></a>
+        </div>
+        <h1 class="Overskrift_forside">Velkommen til Conspirapedia</h1>
+      </div>
+    </header>
+
     <main>
       <div class="knapper">
         <button data-kategori="alle" class="valgt">Alle</button>
@@ -32,7 +39,7 @@
       </article>
     </template>
 
-    <footer><p>ⓒConspirapedia</p></footer>
+    <footer>ⓒ Conspirapedia</footer>
     <script src="script.js"></script>
   </body>
 </html>
