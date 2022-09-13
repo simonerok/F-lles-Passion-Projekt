@@ -15,8 +15,9 @@ header {
 }
 
 #ikon {
-  width: 14rem;
-  align-items: left;
+  width: 16rem;
+  position: relative;
+  left: -3rem;
   padding: 0%;
   top: auto;
 }
@@ -38,6 +39,7 @@ h1 {
   font-weight: 400;
 
   font-style: normal;
+  font-size: 50px;
 }
 
 h2 {
@@ -62,6 +64,7 @@ h3 {
   font-style: normal;
 
   color: black;
+  font-size: x-large;
 }
 
 p {
@@ -126,11 +129,12 @@ p {
   display: flex;
   justify-content: center;
   gap: 10px;
+  background-color: darkred;
 }
 
 button {
   border: solid black 2px;
-  background-color: white;
+  background-color: #8cc63f;
   padding: 10px;
   padding-left: 30px;
   padding-right: 30px;
