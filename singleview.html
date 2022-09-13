@@ -5,50 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Singleview dokument</title>
+    <link
+    rel="icon"
+    type="image/x-icon"
+    href="https://iconifier.net/iconified/20220909223505_Artboard%201/favicon.ico"
+  />
     <style>
       img {
-        width: 50%;
+        width: 23%;
       }
+
+      .artikel_id {
+        background-image: url("images/Pergament.svg");
+        height: 100vh;
+        width: 100%;
+      }
+
+      h2 {
+  font-family: roma-inline, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  text-decoration: underline;
+  
+  color: orange;
+
+  padding: 5px;
+}
     </style>
   </head>
   <body>
-    <button></button>
+    <button>Tilbage</button>
 
     <article class="artikel_id">
       <h2></h2>
-      <p></p>
+      <img src="" alt="">
       <p></p>
     </article>
 
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const id = urlParams.get("id");
-      console.log(id);
 
-      const endpoint = "https://conspirapedia-e82d.restdb.io/rest/conspirapedia" + id;
+      const endpoint = "https://conspirapedia-e82d.restdb.io/rest/conspirapedia/" + id;
       const mereinfo = {
         headers: {
           "x-apikey": "631b232cfdc15b0265f1727b",
         },
       };
 
-      let enArtikel;
+      let enTeori;
 
-      console.log("ID", id);
       document.addEventListener("DOMContentLoaded", hentData);
 
       async function hentData() {
         const respons = await fetch(endpoint, mereinfo);
-        enArtikel = await respons.json();
-        console.log(enArtikel);
-        visArtikel();
+        enTeori = await respons.json();
+        visTeori(enTeori);
+        console.log(enTeori);
       }
 
+      hentData();
+
       /* Ændre navne til de rigtige når restdb er opdateret */
-      function visArtikel() {
-        document.querySelector("h2").textContent = enArtikel.fornavn + " " + enArtikel.efternavn;
-        document.querySelector("img").src = "../billeder/" + enArtikel.billede;
-        document.querySelector("img").alt = enArtikel.billede;
+      function visTeori(teori) {
+        document.querySelector(".artikel_id > h2:nth-child(1)").textContent = teori.Overskrift;
+        document.querySelector("img").src = "images/" + teori.Billednavn;
         /* style og ændre knap */
         document.querySelector("button").addEventListener("click", tilbageKnap);
       }

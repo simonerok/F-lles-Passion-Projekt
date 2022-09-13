@@ -39,13 +39,21 @@ h1 {
 
   font-style: normal;
 }
+
 h2 {
   font-family: roma-inline, sans-serif;
 
   font-weight: 400;
 
   font-style: normal;
+
+  text-decoration: underline;
+  
+  color: orange;
+
+  padding: 5px;
 }
+
 p {
   font-family: john-doe, sans-serif;
 
@@ -71,28 +79,66 @@ section {
   align-items: center;
 }
 
+.ikon {
+  width: 7rem;
+}
+
+main {
+  background-color: darkmagenta;
+}
+
+.valgt {
+  background-color: #cfcfcf;
+}
+
 article {
-  background-image: url("images/Pergament.svg");
-  height: 100vh;
-  width: 100%;
-  /*   aspect-ratio: 556.01/1094.63; */
-  background-position: 100%;
+background-image: url( "images/Pergament.svg");
+height: 100vh;
+width: 100%;
+background-position: 100%;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
-@media (min-width: 1200px) {
-  section {
-    grid-template-columns: repeat(3, 1fr);
-  }
+p {
+  padding: 10px;
+  margin: 50px;
 }
 
-.Overskrift_forside {
-  text-align: center;
-  font-size: 2rem;
+.knapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  border:  solid black 2px;
+  background-color: white;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+button:hover {
+  border: solid yellow 2px;
+}
+
+header {
+  display: flex;
 }
 
 footer {
-  background-color: antiquewhite;
-  padding: 20px;
-  font-style: italic;
-  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  background-color: darkred;
+  color: white;
+  justify-content: end;
+}
+
+@media (min-width: 1200px){
+
+section {
+grid-template-columns: repeat(3, 1fr);
 }
