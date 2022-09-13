@@ -48,7 +48,7 @@ h2 {
   font-style: normal;
 
   text-decoration: underline;
-  
+
   color: orange;
 
   padding: 5px;
@@ -87,7 +87,8 @@ section {
 }
 
 body {
-  background-color: darkmagenta;
+  /* brug denne farvekode i stedet #311262 */
+  background-color: #311262;
 }
 
 .valgt {
@@ -95,15 +96,16 @@ body {
 }
 
 article {
-background-image: url( "images/Pergament.svg");
-height: 100vh;
-width: 100%;
-background-position: 100%;
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+  background-size: 100%;
+  background-image: url("images/Pergament.svg");
+  height: 100vh;
+  width: 100%;
+  background-position: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 p {
@@ -118,7 +120,7 @@ p {
 }
 
 button {
-  border:  solid black 2px;
+  border: solid black 2px;
   background-color: white;
   padding: 10px;
   padding-left: 30px;
@@ -136,9 +138,8 @@ footer {
   justify-content: end;
 }
 
-@media (min-width: 1200px){
-
-section {
-grid-template-columns: repeat(3, 1fr);
-}
+@media (min-width: 1200px) {
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
