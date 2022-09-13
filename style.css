@@ -76,6 +76,7 @@ p {
 /* STYLING AF ARRAY */
 img {
   max-width: 50%;
+  max-height: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -142,10 +143,6 @@ button {
 
 button:hover {
   border: dotted orange 2px;
-}
-
-header {
-  display: flex;
 }
 
 footer {
