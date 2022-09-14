@@ -34,8 +34,8 @@ header {
 }
 
 a {
-   width: 5%;
-   height: 5%;
+  width: 5%;
+  height: 5%;
 }
 
 /* STYLING AF TEKST TIL IKON */
@@ -49,6 +49,10 @@ a {
 /* STYLING AF SØG */
 
 /* FONTE */
+.icons {
+  place-content: end;
+}
+
 h1 {
   font-family: roma-inscribed, sans-serif;
 
@@ -98,12 +102,11 @@ p {
 .intro {
   text-align: center;
   background-color: antiquewhite;
-  padding: 0.5px;
+  padding: 1vh;
 }
 
 /* STYLING AF ARRAY */
 img {
- 
   display: block;
 
   cursor: pointer;
@@ -111,7 +114,7 @@ img {
 
 .menuBar {
   display: flex;
-align-items: baseline;
+  align-items: baseline;
 }
 
 section {
@@ -145,7 +148,7 @@ body {
 article {
   background-size: 100%;
 
-  background-image: url("/images/clipboard.png");
+  background-image: url("/F-lles-Passion-Projekt/images/clipboard.png");
   height: 100vh;
   width: 100%;
   background-position: 100%;
