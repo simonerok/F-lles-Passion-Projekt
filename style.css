@@ -11,14 +11,20 @@ header {
   background-color: #faebd7;
   padding: 20px;
   height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   /* align-items: baseline; */
   justify-content: space-between;
 }
 
+.icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
 #ikon {
   top: auto;
-  width: 100%;
+  width: 350%;
   padding: 5px;
 }
 
@@ -160,8 +166,8 @@ article {
 }
 
 button {
-  border: black 2px dotted;
-  border-radius: 30px;
+  border: black 2px solid;
+  border-radius: 10px;
   background-color: #8cc63f;
   padding: 10px;
   padding-left: 30px;
@@ -169,7 +175,7 @@ button {
 }
 
 button:hover {
-  border: dotted orange 2px;
+  border: solid orange 2px;
 }
 
 footer {
