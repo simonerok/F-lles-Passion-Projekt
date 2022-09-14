@@ -29,6 +29,10 @@ header {
 /* STYLING AF SØG */
 
 /* FONTE */
+.icons {
+  place-content: end;
+}
+
 h1 {
   font-family: roma-inscribed, sans-serif;
 
