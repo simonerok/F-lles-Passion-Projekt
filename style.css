@@ -14,10 +14,9 @@ header {
 }
 
 #ikon {
-  width: 16rem;
-
   padding: 0%;
   top: auto;
+  position: relative;
 }
 
 /* STYLING AF TEKST TIL IKON */
@@ -80,8 +79,7 @@ img {
   max-width: 50%;
   max-height: 50%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+
   cursor: pointer;
 }
 
@@ -111,6 +109,7 @@ body {
 
 article {
   background-size: 100%;
+
   background-image: url("/F-lles-Passion-Projekt/images/clipboard.png");
   height: 100vh;
   width: 100%;
