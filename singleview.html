@@ -7,123 +7,120 @@
     <title>Singleview dokument</title>
     <link rel="stylesheet" href="https://use.typekit.net/mnk3oqv.css" />
     <link
-    rel="icon"
-    type="image/x-icon"
-    href="https://iconifier.net/iconified/20220909223505_Artboard%201/favicon.ico"
-  />
+      rel="icon"
+      type="image/x-icon"
+      href="https://iconifier.net/iconified/20220909223505_Artboard%201/favicon.ico"
+    />
     <style>
-* {
-  margin: 0;
-}
+      * {
+        margin: 0;
+      }
 
-button {
-  border: black 2px dotted;
-  border-radius: 30px;
-  background-color: #8cc63f;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
+      button {
+        border: black 2px dotted;
+        border-radius: 30px;
+        background-color: #8cc63f;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
 
-p {
-  font-family: john-doe, sans-serif;
+      p {
+        font-family: john-doe, sans-serif;
 
-  font-weight: 400;
+        font-weight: 400;
 
-  font-style: normal;
-}
+        font-style: normal;
+      }
 
-img {
-  max-width: 20%;
-}
+      img {
+        max-width: 20%;
+      }
 
-body {
-  background-color: #311262;
-}
+      body {
+        background-color: #311262;
+      }
 
-.artikel_id {
-  background-image: url("images/Pergament.svg");
-  background-repeat: no-repeat;
-  /* height: 100vh; */
-  width: 100%;
-  grid-column: 2;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: antiquewhite;
-  border: solid black;
-  border-radius: 20px;
-  padding: 5px;
-}
+      .artikel_id {
+        background-image: url("images/Pergament.svg");
+        background-repeat: no-repeat;
+        /* height: 100vh; */
+        width: 100%;
+        grid-column: 2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: antiquewhite;
+        border: solid black;
+        border-radius: 20px;
+        padding: 5px;
+      }
 
-  h2 {
-  font-family: roma-inline, sans-serif;
+      h2 {
+        font-family: roma-inline, sans-serif;
 
-  font-weight: 400;
+        font-weight: 400;
 
-  font-style: normal;
+        font-style: normal;
 
-  text-decoration: underline;
-  
-  color: orange;
+        text-decoration: underline;
 
-  padding: 5px;
-}
+        color: orange;
 
-.flex-button {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 10px;
-  margin-left: 10px;
-}
+        padding: 5px;
+      }
 
-header {
-  background-color: antiquewhite;
-  padding: 20px;
-  display: flex;
-}
+      .flex-button {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
 
-h1 {
-  font-family: roma-inscribed, sans-serif;
+      header {
+        background-color: antiquewhite;
+        padding: 20px;
+        display: flex;
+      }
 
-  font-weight: 400;
+      h1 {
+        font-family: roma-inscribed, sans-serif;
 
-  font-style: normal;
-}
+        font-weight: 400;
 
-h2 {
-  font-family: roma-inline, sans-serif;
+        font-style: normal;
+      }
 
-  font-weight: 400;
+      h2 {
+        font-family: roma-inline, sans-serif;
 
-  font-style: normal;
+        font-weight: 400;
 
-  text-decoration: underline;
-  
-  color: orange;
+        font-style: normal;
 
-  padding: 5px;
-}
+        text-decoration: underline;
 
-#ikon {
-  width: 10%;
-}
+        color: orange;
 
-.grid-container {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-justify-content: center;
-}
+        padding: 5px;
+      }
 
+      #ikon {
+        width: 10%;
+      }
 
-button:hover {
-  border: dotted yellow 2px;
-}
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+      }
 
-
+      button:hover {
+        border: dotted yellow 2px;
+      }
     </style>
   </head>
-  
+
   <body>
     <header>
       <div>
@@ -132,9 +129,16 @@ button:hover {
 
       <div class="navbar">
         <div class="icons">
-          <a href="#"> <img src="icons/search_ny.svg" alt="søg" width="32" height="32" class="search_bar" /></a>
+          <a href="#">
+            <img
+              src="icons/search_ny.svg"
+              alt="søg"
+              width="32"
+              height="32"
+              class="search_bar"
+          /></a>
         </div>
-        <h1 class="Overskrift_forside">Velkommen til Conspirapedia</h1>
+        <h1 class="Overskrift_forside">Conspirapedia</h1>
       </div>
     </header>
 
@@ -145,17 +149,17 @@ button:hover {
     <div class="grid-container">
       <article class="artikel_id">
         <h2></h2>
-        <img src="" alt="">
+        <img src="" alt="" />
         <p></p>
       </article>
     </div>
-  
 
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const id = urlParams.get("id");
 
-      const endpoint = "https://conspirapedia-e82d.restdb.io/rest/conspirapedia/" + id;
+      const endpoint =
+        "https://conspirapedia-e82d.restdb.io/rest/conspirapedia/" + id;
       const mereinfo = {
         headers: {
           "x-apikey": "631b232cfdc15b0265f1727b",
@@ -177,8 +181,10 @@ button:hover {
 
       /* Ændre navne til de rigtige når restdb er opdateret */
       function visTeori(teori) {
-        document.querySelector(".artikel_id > h2:nth-child(1)").textContent = teori.Overskrift;
-        document.querySelector(".artikel_id > img").src = "images/" + teori.Billednavn;
+        document.querySelector(".artikel_id > h2:nth-child(1)").textContent =
+          teori.Overskrift;
+        document.querySelector(".artikel_id > img").src =
+          "images/" + teori.Billednavn;
         document.querySelector("p").textContent = teori.Langtekst;
         /* style og ændre knap */
         document.querySelector("button").addEventListener("click", tilbageKnap);
