@@ -147,10 +147,10 @@ body {
 }
 
 .undersider {
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 50px;
 }
 
 article {
@@ -218,6 +218,36 @@ h4 {
 
 .om_os {
   text-align: center;
+  font-family: roma-inline, sans-serif;
+
+  font-weight: 1000;
+
+  font-style: normal;
+
+  text-decoration: underline;
+
+  color: darkred;
+
+  padding: 5px;
+
+  cursor: pointer;
+}
+
+.om_os {
+  text-align: center;
+  font-family: roma-inline, sans-serif;
+
+  font-weight: 1000;
+
+  font-style: normal;
+
+  text-decoration: underline;
+
+  color: darkred;
+
+  padding: 5px;
+
+  cursor: pointer;
 }
 
 @media (min-width: 1200px) {
