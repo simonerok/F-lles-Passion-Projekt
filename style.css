@@ -15,6 +15,7 @@ header {
 
 #ikon {
   top: auto;
+  size: 20px;
 }
 
 /* STYLING AF TEKST TIL IKON */
@@ -73,6 +74,12 @@ p {
   margin: 40px;
 }
 
+.intro {
+  text-align: center;
+  background-color: antiquewhite;
+  padding: 0.5px;
+}
+
 /* STYLING AF ARRAY */
 img {
   max-width: 50%;
@@ -109,7 +116,7 @@ body {
 article {
   background-size: 100%;
 
-  background-image: url("/images/clipboard.png");
+  background-image: url("/F-lles-Passion-Projekt/images/clipboard.png");
   height: 100vh;
   width: 100%;
   background-position: 100%;
