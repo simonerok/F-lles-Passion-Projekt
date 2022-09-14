@@ -89,6 +89,12 @@ p {
   margin: 40px;
 }
 
+.intro {
+  text-align: center;
+  background-color: antiquewhite;
+  padding: 0.5px;
+}
+
 /* STYLING AF ARRAY */
 img {
  
