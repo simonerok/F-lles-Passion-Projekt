@@ -146,6 +146,7 @@ body {
   background-image: url("/F-lles-Passion-Projekt/images/stjerner_blaa.jpg");
   background-size: auto;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .valgt {
