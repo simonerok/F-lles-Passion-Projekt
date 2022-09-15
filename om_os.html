@@ -12,6 +12,35 @@
       href="https://iconifier.net/iconified/20220909223505_Artboard%201/favicon.ico"
     />
     <title>Om os</title>
+
+
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px auto;
+        align-items: center;
+      }
+
+      .article1 {
+        grid-area: 1/2;
+        height: 75%;
+      }
+
+      .article2 {
+        grid-area: 2/2;
+        height: 100%;
+        margin-bottom: 1rem;
+      }
+
+      article {
+        background-image: none;
+        background-color: #faebd7;
+        border: solid 1px;
+        border-radius: 10px;
+      }
+
+    </style>
 </head>
 <body>
         <header>
@@ -28,15 +57,17 @@
     </header>
 
     <main>
-      <article>
       
-      <p>Vores mission er at oplyse folket med en masse viden, som man ellers ikke hører i de konventionelle sammenhænge. Folk skal have ret til at vide sandheden; uanset hvor ubehagelig eller upraktisk den nu må være.</p>
-      </article>
-      <article>
-      <h2>Hvad er en konspirationsteori?</h2>
-      <p>Ifølge Wikipedia: 
-        "En konspirationsteori er forestillingen om, at en begivenhed er sket eller en situation er indtrådt som følge af en sammensværgelse i hemmelige og magtfulde kredse, som ofte er politisk motiverede, når andre forklaringer er mere sandsynlige.". Med andre ord er en konspirationsteori ofte en alternativ teori om hvordan bestemte hændelser er startet pga. sammensværgelser fra bestemte grupper.</p>
-      </article>
+      <div class="grid-container">
+        <article class="article1">
+          <p>Vores mission er at oplyse folket med en masse viden, som man ellers ikke hører i de konventionelle sammenhænge. Folk skal have ret til at vide sandheden; uanset hvor ubehagelig eller upraktisk den nu må være.</p>
+          </article>
+          <article class="article2">
+          <h2>Hvad er en konspirationsteori?</h2>
+          <p>Ifølge Wikipedia: 
+            "En konspirationsteori er forestillingen om, at en begivenhed er sket eller en situation er indtrådt som følge af en sammensværgelse i hemmelige og magtfulde kredse, som ofte er politisk motiverede, når andre forklaringer er mere sandsynlige.". Med andre ord er en konspirationsteori ofte en alternativ teori om hvordan bestemte hændelser er startet pga. sammensværgelser fra bestemte grupper.</p>
+          </article>
+      </div>
     </main>
 
     <footer>ⓒ Conspirapedia</footer>
