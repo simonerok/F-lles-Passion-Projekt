@@ -143,6 +143,9 @@ section {
 body {
   /* brug denne farvekode i stedet #311262 */
   background-color: #311262;
+  background-image: url("/F-lles-Passion-Projekt/images/stjerner_blaa.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .valgt {
