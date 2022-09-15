@@ -12,6 +12,32 @@
       href="https://iconifier.net/iconified/20220909223505_Artboard%201/favicon.ico"
     />
     <title>Kontakt</title>
+<style>
+article{
+  background-image: none;
+  background-color: #faebd7;
+border: solid black;
+border-radius: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+}
+
+.article1 {
+  grid-area: 1/2;
+  height: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+
+</style>
 </head>
 <body>
         <header>
@@ -28,16 +54,18 @@
     </header>
 
     <main>
-      <article>
 
-      <h2>Tlf:</h2>
-      <p>666-911-420</p>
-      <h2>
-        Mail:
-      </h2>
-      <p>conspirapedia@mail.com</p>
-      <h2>Fax:</h2>
-      </article>
+      <div class="grid-container">
+        <article class="article1">
+        <h2>Tlf:</h2>
+        <p>666-911-420</p>
+        <h2>
+          Mail:
+        </h2>
+        <p>conspirapedia@mail.com</p>
+        <h2>Fax:</h2>
+        </article>
+      </div>
       
     
     </main>
