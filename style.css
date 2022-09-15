@@ -208,6 +208,7 @@ footer {
   gap: 10px;
   background-color: darkred;
 }
+
 h4 {
   font-family: roma-inline, sans-serif;
 
@@ -215,7 +216,7 @@ h4 {
 
   font-style: normal;
   font-size: 23px;
-  text-decoration: underline;
+  text-decoration: none;
 
   color: orange;
 
